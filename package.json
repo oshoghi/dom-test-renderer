@@ -1,0 +1,56 @@
+{
+  "name": "dom-test-renderer",
+  "version": "0.5.4",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm run test",
+    "pack": "NODE_PATH=src webpack --progress --colors --bail --config webpack.config.js"
+  },
+  "keywords": [
+    "test",
+    "jest"
+  ],
+  "author": "Okhtay Shoghi",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.3.4",
+    "@babel/plugin-proposal-class-properties": "7.4.0",
+    "@babel/plugin-proposal-optional-chaining": "7.2.0",
+    "@babel/plugin-transform-runtime": "7.4.0",
+    "@babel/preset-env": "7.3.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@babel/runtime": "7.5.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "source-map-loader": "^1.1.1",
+    "terser-webpack-plugin": "2.2.1",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "webpack": "4.29.6",
+    "webpack-bundle-analyzer": "3.1.0",
+    "webpack-cli": "3.2.3",
+    "webpack-node-externals": "1.7.2"
+  },
+  "peerDependencies": {
+    "jasmine": "3.1.0"
+  },
+  "babel": {
+    "sourceType": "unambiguous",
+    "presets": [
+      "@babel/env",
+      "@babel/react",
+      "@babel/preset-typescript"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime",
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-optional-chaining"
+    ]
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "outDir": "./dist",
+        "baseUrl": "./src",
+        "allowJs": true,
+        "target": "es2015",
+        "esModuleInterop": true,
+        "typeRoots": [ "node_modules/@types" ],
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "declaration": true
+    },
+    "exclude": ["node_modules", "build"],
+    "include": ["./src/**/*"]
+}
